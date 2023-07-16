@@ -1,0 +1,12 @@
+.footer_grid{
+    display: flex;
+    margin-top:32px;
+    column-gap:128px;
+    color:#fff;
+    margin-bottom: 48px;
+}
+.footer_grid_item{
+    display: flex;
+    flex-direction: column;
+    row-gap:23px;
+}

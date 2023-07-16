@@ -12,10 +12,10 @@ export function GridItem({ProductName,TimeDelivery,Currency,Kitchen,ImageSrc}:Re
     const KitchenString = Kitchen.join(" ")
     return (
         <div className='grid_item'>
-            <Image src={ImageSrc} width={256} height={356} alt={"Image"}></Image>
-            <h1>{ProductName}</h1>
-            <p className='subtitle'>{Currency} • {KitchenString}</p>
-            <p>{TimeDelivery}</p>
+            <Image src={ImageSrc} width={356} height={256} alt={ProductName}></Image>
+            <p className='grid_header'>{ProductName}</p>
+            <p className='grid_subtitle'>{Currency} • {KitchenString}</p>
+            <p className='grid_time_delivery'>{TimeDelivery}</p>
         </div>
     )
 }

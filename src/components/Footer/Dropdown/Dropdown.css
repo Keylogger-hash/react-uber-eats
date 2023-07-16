@@ -1,0 +1,18 @@
+.dropdown{
+    background-color: #3B3B3B;;
+    width:227px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.dropdown_block{
+    display: flex;
+    margin-left: 16px;
+    user-select: none;
+    column-gap:16px;
+}
+.dropdown_arrow{
+    margin-right: 8px;
+}

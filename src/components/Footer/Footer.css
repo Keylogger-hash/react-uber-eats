@@ -1,0 +1,11 @@
+.footer{
+    background-color:#262626;
+    width:100%;
+    color:#fff;
+    font-size:13px;
+}
+.footer_wrapper{
+    margin-top:56px;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,6 +1,13 @@
-.subtitle{
+.grid_subtitle{
     color:#626262;
     font-size:14px;
+}
+.grid_header{
+    color: #1D1D1D;
+    font-size: 16px;
+}
+.grid_time_delivery{
+    font-size: 13px;
 }
 .grid_item{
 

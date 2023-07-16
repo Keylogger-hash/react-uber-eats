@@ -4,32 +4,7 @@
     margin:0 auto;
     padding:0 15px;
 }
-.header{
-    background-color:#FFFFFF;
-    height:72px;
-    width:100%;
-}
-.header_wrapper{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width:100%;
-    height: 100%;
-    flex:1;
-}
-.header_logo{
 
-}
-.header_block{
-    display: flex;
-    flex-direction: row;
-}
-.button_login{
-    height:40px;
-    padding: 14px 20px 14px 20px;
-    border: 1px solid #E0E0E0;
-}
 .cart_logo{
 }
 .main{
@@ -55,15 +30,4 @@
     margin-top:56px;
     font-size: 22px;
     color: #1D1D1D;
-}
-.footer{
-    background-color:#262626;
-    width:100%;
-    color:#fff;
-    font-size:13px;
-}
-.footer_wrapper{
-    margin-top:56px;
-    display: flex;
-    flex-direction: column;
 }
