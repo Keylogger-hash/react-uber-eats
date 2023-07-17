@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import {SearchBar} from "@/components/SearchBar/SearchBar";
 import {GridItemList} from "@/components/GridItemList/GridItemList";
 import {Footer} from "@/components/Footer/Footer";
 import {Header} from "@/components/Header/Header";
@@ -10,13 +11,7 @@ export default function Home() {
         <main className={styles.main}>
           <div className={styles.container}>
               <div className={styles.main_wrapper}>
-                <div>
-                    <div className={styles.search_input}>
-                        Поиск по ресторанам и кухням
-                    </div>
-                    <div className={styles.search_rectangle}>
-                    </div>
-                </div>
+                    <SearchBar></SearchBar>
                   <div className={styles.main_header}>
                       Рестораны в Москве
                   </div>

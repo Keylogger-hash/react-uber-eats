@@ -1,0 +1,10 @@
+.button_login{
+    display: flex;
+    width:100%;
+    align-items: center;
+    font-size:13px;
+    color:#1D1D1D;
+    height: 40px;
+    user-select: none;
+    border: 1px solid #E0E0E0;
+}

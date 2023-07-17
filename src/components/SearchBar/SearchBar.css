@@ -1,0 +1,13 @@
+.search_input{
+    color:#626262;
+    font-size:16px;
+    user-select: none;
+    margin-top:56px;
+}
+.search_rectangle{
+    height:1px;
+    fill: #757575;
+    opacity: 0.30000001192092896;
+    width:100%;
+    border: 1px inset; /* This is default border style for <hr> tag */
+}

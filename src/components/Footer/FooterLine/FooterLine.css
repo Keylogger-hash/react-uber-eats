@@ -1,4 +1,7 @@
 .footer_line{
     display: flex;
+    background-color:#fff;
+    opacity: 0.4;
+    height: 1px;
     width: 100%;
 }
