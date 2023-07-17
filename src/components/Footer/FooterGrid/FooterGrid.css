@@ -1,7 +1,7 @@
 .footer_grid{
     display: flex;
     margin-top:32px;
-    column-gap:128px;
+    justify-content: space-between;
     color:#fff;
     margin-bottom: 48px;
 }

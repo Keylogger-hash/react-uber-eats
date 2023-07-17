@@ -3,6 +3,12 @@
     font-size:16px;
     user-select: none;
     margin-top:56px;
+    cursor: pointer;
+    pointer-events: all;
+
+}
+input[type="text"]{
+    font-size: 24px;
 }
 .search_rectangle{
     height:1px;

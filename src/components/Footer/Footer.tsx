@@ -12,11 +12,15 @@ export const Footer = ()=>{
                 <div className='footer_wrapper'>
                     <Logo></Logo>
                     <FooterLine></FooterLine>
-                    <FooterGrid></FooterGrid>
+                    <div className='footer_container'>
+                        <FooterGrid></FooterGrid>
+                    </div>
                     <FooterLine></FooterLine>
                     <FooterStoreLogo></FooterStoreLogo>
                     <FooterLine></FooterLine>
-                    <FooterBottom></FooterBottom>
+                    <div className='footer_container'>
+                        <FooterBottom></FooterBottom>
+                    </div>
                 </div>
             </div>
         </footer>
