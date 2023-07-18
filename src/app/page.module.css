@@ -4,16 +4,16 @@
     margin:0 auto;
     padding:0 15px;
 }
-
-.cart_logo{
-}
-.main{
+@media screen and (max-width:787px) {
+    .container{
+        height: 100%;
+        max-width:none;
+    }
 }
 .main_wrapper{
     display: flex;
     flex-direction: column;
 }
-
 .main_header{
     margin-top:56px;
     font-size: 22px;

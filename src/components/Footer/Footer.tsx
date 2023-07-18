@@ -5,6 +5,7 @@ import {FooterGrid} from "@/components/Footer/FooterGrid/FooterGrid";
 import {FooterStoreLogo} from "@/components/Footer/FooterStoreLogo/FooterStoreLogo";
 import {FooterBottom} from "@/components/Footer/FooterBottom/FooterBottom";
 import './Footer.css'
+import {BackButton} from "@/components/Footer/BackButton/BackButton";
 export const Footer = ()=>{
     return (
         <footer className='footer'>
@@ -21,6 +22,7 @@ export const Footer = ()=>{
                     <div className='footer_container'>
                         <FooterBottom></FooterBottom>
                     </div>
+                    <BackButton></BackButton>
                 </div>
             </div>
         </footer>

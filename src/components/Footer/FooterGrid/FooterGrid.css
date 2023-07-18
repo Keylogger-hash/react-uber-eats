@@ -10,3 +10,19 @@
     flex-direction: column;
     row-gap:23px;
 }
+@media screen and (max-width:787px) {
+    .footer_grid{
+        display: flex;
+        flex-direction: column;
+        margin-top:32px;
+        justify-content: space-between;
+        color:#fff;
+        margin-bottom: 48px;
+    }
+    .footer_grid_item{
+        display: flex;
+        flex-direction: column;
+        column-gap:23px;
+        margin-top:23px;
+    }
+}
