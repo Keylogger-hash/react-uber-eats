@@ -1,0 +1,18 @@
+.restaurant_grid_item_list{
+    margin-top:56px;
+}
+.restaurant_grid_item_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.restaurant_grid_item_header{
+    color: #1D1D1D;
+    font-size: 22px;
+    margin-bottom: 32px;
+}
+.restaurant_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(340px,1fr));
+    column-gap:16px;
+    row-gap: 49px;
+}

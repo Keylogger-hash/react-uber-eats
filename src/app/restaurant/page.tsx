@@ -1,11 +1,15 @@
 import {Header} from "@/components/Header/Header";
 import {Footer} from "@/components/Footer/Footer";
-import Image from "next/image";
+import {RestaurantHeader} from "@/components/RestaurantHeader/RestaurantHeader";
+import {RestaurantChooseDishes} from "@/components/RestaurantChooseDishes/RestaurantChooseDishes";
+import {RestaurantGridItemList} from "@/components/RestaurantGridItemList/RestaurantGridItemList";
 export default function Restaurant() {
     return (
         <div>
             <Header></Header>
-            <Image src="/rest/traktir.png" alt="traktir" width={640} height={480}/>
+            <RestaurantHeader></RestaurantHeader>
+            <RestaurantChooseDishes></RestaurantChooseDishes>
+            <RestaurantGridItemList></RestaurantGridItemList>
             <Footer></Footer>
         </div>
     )
