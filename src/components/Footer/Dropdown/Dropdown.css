@@ -16,3 +16,37 @@
 .dropdown_arrow{
     margin-right: 8px;
 }
+.dropdown_arrow_transition{
+    transform: rotate(0.5turn);
+}
+
+.dropdown_modal{
+    position: absolute;
+    background-color: #3B3B3B;
+    color:#ffffff;
+    width: 227px;
+    margin-top:70px;
+}
+.non_active{
+    display: none;
+}
+.active{
+    display: block;
+}
+.dropdown_modal ul,li{
+    text-decoration: none;
+    list-style-type: none;
+}
+.dropdown_modal ul{
+    padding-left: 48px;
+}
+.dropdown_modal li:hover{
+    background-color: #585858;
+}
+.dropdown_title_active{
+    display: block;
+}
+.dropdown_title_non_active{
+    display: none;
+    background-color: #585858;
+}

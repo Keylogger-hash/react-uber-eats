@@ -67,7 +67,11 @@ const RestaurantList: RestaurantItem[] = [
         ImageSrc:'/RestaurantImages/Bar BQ Cafe — Манежная.png'
     }
 ];
-const GridItemListData: ReactNode[] = RestaurantList.map((restaurant, index)=>{
+const RestaurantListFilter = RestaurantList.filter(
+    restaurant=>
+        restaurant.ProductName.toLowerCase().startsWith('ма')
+)
+const GridItemListData: ReactNode[] = RestaurantListFilter.map((restaurant, index)=>{
 
     return (
         <GridItem {...restaurant} key={index}></GridItem>
