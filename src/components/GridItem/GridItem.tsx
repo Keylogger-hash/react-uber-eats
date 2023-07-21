@@ -1,6 +1,7 @@
 import './GridItem.css'
 import Image from 'next/image'
-import Profile from '../../../public/RestaurantImages/Макдоналдс — Газетный.png'
+import Link from "next/link";
+
 export interface RestaurantItem{
     ProductName:string,
     TimeDelivery: string,
@@ -12,14 +13,14 @@ export function GridItem({ProductName,TimeDelivery,Currency,Kitchen,ImageSrc}:Re
     const KitchenString = Kitchen.join(" ")
     return (
         <div>
-            <a href={'/restaurant'}>
+            <Link href={'/restaurant'}>
                 <div className='grid_item'>
                     <Image src={ImageSrc} width={356} height={256} alt={ProductName}></Image>
                     <p className='grid_header'>{ProductName}</p>
                     <p className='grid_subtitle'>{Currency} • {KitchenString}</p>
                     <p className='grid_time_delivery'>{TimeDelivery}</p>
                 </div>
-            </a>
+            </Link>
         </div>
 
     )

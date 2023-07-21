@@ -1,3 +1,5 @@
+import {LoginForm} from "@/components/LoginModal/LoginForm/LoginForm";
+
 'use client;'
 import './LoginModal.css'
 import {MouseEvent} from "react";
@@ -17,6 +19,7 @@ export const LoginModal:React.FC<LoginModalProps> = ({ShowModal,toggle}:LoginMod
                     <div onClick={toggle} className='close_button'>
                         close
                     </div>
+                    <LoginForm></LoginForm>
                 </div>
             </div>
         </div>

@@ -1,5 +1,6 @@
 import './FooterGrid.css'
 import Image from 'next/image'
+import Link from "next/link";
 import {Dropdown} from "@/components/Footer/Dropdown/Dropdown";
 export const FooterGrid = ()=>{
     return (
@@ -14,15 +15,15 @@ export const FooterGrid = ()=>{
                 </div>
             </div>
             <div className='footer_grid_item'>
-                <a>Об UberEats</a>
-                <a>Станьте партнёром по доставке</a>
-                <a>Станьте парнёром-рестораном</a>
+                <Link href={"/"}>Об UberEats</Link>
+                <Link href={"/"}>Станьте партнёром по доставке</Link>
+                <Link href={"/"}>Станьте парнёром-рестораном</Link>
             </div>
             <div className='footer_grid_item'>
-                <a>Все города</a>
-                <a>Цены</a>
-                <a>Помощь</a>
-                <a>FAQs</a>
+                <Link href={"/"}>Все города</Link>
+                <Link href={"/"}>Цены</Link>
+                <Link href={"/"}>Помощь</Link>
+                <Link href={"/"}>FAQs</Link>
             </div>
         </div>
     )

@@ -1,7 +1,8 @@
+import Link from "next/link";
 export const HeaderLogo = ()=>{
     return (
         <div>
-            <a href={'/'}>
+            <Link href={'/'}>
                 <svg width="120" height="14" viewBox="0 0 120 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="logo">
                         <g id="XMLID_234_">
@@ -21,7 +22,7 @@ export const HeaderLogo = ()=>{
                         </g>
                     </g>
                 </svg>
-            </a>
+            </Link>
         </div>
     )
 }
