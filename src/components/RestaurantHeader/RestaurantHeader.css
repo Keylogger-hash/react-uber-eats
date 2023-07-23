@@ -5,8 +5,8 @@
 }
 .restaurant_image_overlay{
     position: absolute;
-    left:81px;
     top:81px;
+    margin:0 auto;
     height: 204px;
     background-color: #ffffff;
     padding: 38px;

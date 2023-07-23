@@ -1,15 +1,21 @@
 import './RestaurantGridItem.css'
 import Image from "next/image";
-
-export const RestaurantGridItem = ()=>{
+export interface RestaurantItemProps {
+    Title:string,
+    SubTitle:string,
+    Price:number,
+    Currency:string,
+    ImageSource:string
+}
+export const RestaurantGridItem = ({Title,SubTitle,Price,Currency,ImageSource}:RestaurantItemProps)=>{
     return (
         <div className='restaurant_grid_item'>
             <div className='restaurant_grid_item_block'>
-                <p className='restaurant_grid_item_title'>Сельдь на бородинском хлебе</p>
-                <p className='restaurant_grid_item_sub_title'>С яйцом и огурцом</p>
-                <p className='restaurant_grid_item_price'>240 ₽</p>
+                <p className='restaurant_grid_item_title'>{Title}</p>
+                <p className='restaurant_grid_item_sub_title'>{SubTitle}</p>
+                <p className='restaurant_grid_item_price'>{Price} {Currency}</p>
             </div>
-            <Image src='/rest/Capture1.png' alt='Capture' width={170} height={160}></Image>
+            <Image src={ImageSource} alt={Title} width={170} height={160}></Image>
         </div>
     )
 }
