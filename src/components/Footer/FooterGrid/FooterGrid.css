@@ -4,11 +4,13 @@
     justify-content: space-between;
     color:#fff;
     margin-bottom: 48px;
+    column-gap:100px;
 }
 .footer_grid_item{
     display: flex;
     flex-direction: column;
     row-gap:23px;
+    flex: 0 0 33.333%;
 }
 @media screen and (max-width:787px) {
     .footer_grid{

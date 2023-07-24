@@ -1,4 +1,3 @@
-
 import {createContext} from "react";
 export interface SearchProps{
     searchValue: string,

@@ -7,7 +7,7 @@ import {Footer} from "@/components/Footer/Footer";
 import {Header} from "@/components/Header/Header";
 import {createContext} from "react";
 import {useState} from "react";
-import {SearchContext} from '@/context/SearchContext';
+import {SearchContext, SearchProps} from '@/context/SearchContext';
 
 export default function Home() {
     const [searchValue,setSearchValue] = useState('')
@@ -23,7 +23,7 @@ export default function Home() {
                       <div className={styles.main_header}>
                           Рестораны в Москве
                       </div>
-                      <SearchContext.Provider value={searchValue}>
+                      <SearchContext.Provider value={[searchValue]}>
                           <GridItemList></GridItemList>
                       </SearchContext.Provider>
                   </div>

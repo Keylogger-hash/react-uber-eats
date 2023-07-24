@@ -9,6 +9,11 @@
 }
 input[type="text"]{
     font-size: 24px;
+    outline-width: 0;
+    outline: none;
+    border:none;
+    border-bottom: 1px solid rgb(38%, 38%, 38%, 0.30000001192092896);;
+
 }
 .search_rectangle{
     height:1px;

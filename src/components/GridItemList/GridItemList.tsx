@@ -76,7 +76,7 @@ export const   GridItemList = () =>{
     console.log(search)
     const RestaurantListFilter = RestaurantList.filter(
         restaurant=>
-            restaurant.ProductName.startsWith(search)
+            restaurant.ProductName.toLowerCase().includes(search.toString().toLowerCase())
     )
     console.log(RestaurantListFilter)
     const GridItemListData: ReactNode[] = RestaurantListFilter.map((restaurant, index)=>{
