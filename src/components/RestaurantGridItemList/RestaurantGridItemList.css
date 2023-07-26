@@ -12,8 +12,16 @@
 }
 .restaurant_grid{
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(340px,1fr));
-
+    grid-template-columns: repeat(auto-fit,minmax(470px,1fr));
     column-gap:16px;
     row-gap: 49px;
+}
+@media screen and (max-width: 787px) {
+    .restaurant_grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(308px,1fr));
+        column-gap:16px;
+        row-gap: 49px;
+    }
+
 }

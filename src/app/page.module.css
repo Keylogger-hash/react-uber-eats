@@ -9,6 +9,7 @@
         height: 100%;
         max-width:none;
         margin:0 auto;
+        padding: 0 8px;
     }
 }
 .main_wrapper{

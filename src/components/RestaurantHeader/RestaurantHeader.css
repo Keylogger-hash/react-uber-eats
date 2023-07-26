@@ -2,6 +2,20 @@
     position: relative;
     padding:0;
     margin:0;
+    height:364px;
+    z-index: 100;
+}
+.restaurant_header_title{
+    font-size: 36px;
+    font-weight: 400;
+    color: #1D1D1D;
+}
+@media screen and (max-width: 787px) {
+    .restaurant_header_title{
+        font-size: 28px;
+        font-weight: 400;
+        color: #1D1D1D;
+    }
 }
 .restaurant_image_overlay{
     position: absolute;
@@ -11,15 +25,35 @@
     background-color: #ffffff;
     padding: 38px;
 }
+@media screen and (max-width: 768px){
+    .restaurant_image_overlay{
+        position: absolute;
+        width:96%;
+        height: 204px;
+        background-color: #ffffff;
+        padding: 38px;
+    }
+}
 .restaurant_flex_container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     row-gap:62px;
 }
+
 .restaurant_block{
     display: flex;
     flex-direction: row;
     column-gap:62px;
+}
+@media screen and (max-width: 768px) {
+    .restaurant_block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap:16px;
+    }
 }
 .restaurant_delivery_time{
     color:#fff;
