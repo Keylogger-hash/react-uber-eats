@@ -9,7 +9,6 @@ export interface LoginModalProps {
     toggle:()=>{}
 }
 export const LoginModal:React.FC<LoginModalProps> = ({ShowModal,toggle}:LoginModalProps)=>{
-    console.log(typeof toggle)
     const isActive = ShowModal ? 'active':'non_active'
     const mainClass = `modal ${isActive}`
     return (

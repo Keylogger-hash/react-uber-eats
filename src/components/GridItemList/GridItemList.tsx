@@ -72,13 +72,10 @@ export const   GridItemList = () =>{
         }
     ];
     const search = useContext(SearchContext);
-    console.log(RestaurantList)
-    console.log(search)
     const RestaurantListFilter = RestaurantList.filter(
         restaurant=>
             restaurant.ProductName.toLowerCase().includes(search.toString().toLowerCase())
     )
-    console.log(RestaurantListFilter)
     const GridItemListData: ReactNode[] = RestaurantListFilter.map((restaurant, index)=>{
         return (
             <GridItem {...restaurant} key={index}></GridItem>
