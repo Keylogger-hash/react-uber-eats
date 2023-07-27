@@ -15,7 +15,7 @@ export const RestaurantHeader = ()=>{
             <div className={styles.container}>
                 <div className='restaurant_image_overlay'>
                         <div className='restaurant_flex_container'>
-                            <p>Трактир «Пушкин»</p>
+                            <p className={'restaurant_header_title'}>Трактир «Пушкин»</p>
                             <div className='restaurant_block'>
                                 <p className='restaurant_sub_title'>₽₽₽ • Европейская</p>
                                 <div className='restaurant_delivery_time'>

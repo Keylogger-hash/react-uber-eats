@@ -2,12 +2,12 @@ import '../Form.css'
 import React from "react";
 
 
-export const LoginForm = ()=>{
+export const RegisterForm = ()=>{
     return (
         <div>
             <div className={'login_form'}>
                 <div className={'login_title'}>
-                    Войти
+                    Регистрация
                 </div>
                 <div className={'login_input_wrapper'}>
                     <label
@@ -18,6 +18,18 @@ export const LoginForm = ()=>{
                         className={"login_input"}
                         type={"text"}
                         id={"username"}
+                        placeholder={'Имя и фамилия'}
+                    />
+                </div>
+                <div className={'login_input_wrapper'}>
+                    <label
+                        className={'login_label'}
+                        htmlFor={"email"}>
+                    </label>
+                    <input
+                        className={"login_input"}
+                        type={"text"}
+                        id={"email"}
                         placeholder={'Почта'}
                     />
                 </div>
@@ -33,11 +45,12 @@ export const LoginForm = ()=>{
                         placeholder={'Пароль'}
                     />
                 </div>
-                <button className={'login_button'}>Войти</button>
+                <button className={'login_button'}>Зарегистрироваться</button>
             </div>
             <div className={'form_footer'}>
+                Уже есть аккаут?
                 <a>
-                    Регистрация
+                    Войти
                 </a>
             </div>
         </div>
