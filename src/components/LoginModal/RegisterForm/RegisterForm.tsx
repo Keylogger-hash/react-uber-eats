@@ -1,6 +1,6 @@
 import '../Form.css'
 import React from "react";
-
+import {LoginFormFooter} from "@/components/LoginModal/LoginFormFooter/LoginFormFooter";
 
 export const RegisterForm = ()=>{
     return (
@@ -47,12 +47,7 @@ export const RegisterForm = ()=>{
                 </div>
                 <button className={'login_button'}>Зарегистрироваться</button>
             </div>
-            <div className={'form_footer'}>
-                Уже есть аккаут?
-                <a>
-                    Войти
-                </a>
-            </div>
+            <LoginFormFooter></LoginFormFooter>
         </div>
     )
 }

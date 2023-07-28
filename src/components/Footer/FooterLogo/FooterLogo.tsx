@@ -1,5 +1,5 @@
-import './Logo.css'
-export const Logo = ()=>{
+import './FooterLogo.css'
+export const FooterLogo = ()=>{
     return (
         <div className='footer_logo'>
             <svg width="192" height="21" viewBox="0 0 192 21" fill="none" xmlns="http://www.w3.org/2000/svg">

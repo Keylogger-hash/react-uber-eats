@@ -1,5 +1,5 @@
 import styles from "@/app/page.module.css";
-import {Logo} from "@/components/Footer/Logo/Logo";
+import {FooterLogo} from "@/components/Footer/FooterLogo/FooterLogo";
 import {FooterLine} from "@/components/Footer/FooterLine/FooterLine";
 import {FooterGrid} from "@/components/Footer/FooterGrid/FooterGrid";
 import {FooterStoreLogo} from "@/components/Footer/FooterStoreLogo/FooterStoreLogo";
@@ -11,7 +11,7 @@ export const Footer = ()=>{
         <footer className='footer'>
             <div className={styles.container}>
                 <div className='footer_wrapper'>
-                    <Logo></Logo>
+                    <FooterLogo></FooterLogo>
                     <FooterLine></FooterLine>
                     <div className='footer_container'>
                         <FooterGrid></FooterGrid>

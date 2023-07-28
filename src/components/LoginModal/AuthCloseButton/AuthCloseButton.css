@@ -1,0 +1,9 @@
+.close_button{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    user-select: none;
+}
+.close_button svg:hover{
+    stroke: gray;
+}
