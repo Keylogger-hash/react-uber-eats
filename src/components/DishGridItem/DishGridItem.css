@@ -1,0 +1,28 @@
+.restaurant_grid_item{
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 750px;
+}
+.restaurant_grid_item_block{
+    display: flex;
+    flex-direction: column;
+    padding-top:16px;
+    padding-left:16px;
+    padding-bottom: 16px;
+}
+.restaurant_grid_item_title{
+    color:#1D1D1D;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+.restaurant_grid_item_sub_title{
+    color:#626262;
+    font-size: 13px;
+    margin-bottom: 58px;
+}
+.restaurant_grid_item_price{
+    color:#1D1D1D;
+    font-size: 15px;
+}

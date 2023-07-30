@@ -1,21 +1,22 @@
 import './RestaurantGridItem.css'
-import Image from "next/image";
-export interface RestaurantItemProps {
-    Title:string,
-    SubTitle:string,
-    Price:number,
-    Currency:string,
-    ImageSource:string
-}
-export const RestaurantGridItem = ({Title,SubTitle,Price,Currency,ImageSource}:RestaurantItemProps)=>{
+import {RestaurantProps} from "@/interfaces/restaurant.interface";
+import Image from 'next/image'
+import Link from "next/link";
+
+
+export function RestaurantGridItem({RestaurantName,TimeDelivery,Currency,Kitchen,ImageSrc}:RestaurantProps){
+    const KitchenString = Kitchen.join(" ")
     return (
-        <div className='restaurant_grid_item'>
-            <div className='restaurant_grid_item_block'>
-                <p className='restaurant_grid_item_title'>{Title}</p>
-                <p className='restaurant_grid_item_sub_title'>{SubTitle}</p>
-                <p className='restaurant_grid_item_price'>{Price} {Currency}</p>
-            </div>
-            <Image src={ImageSource} alt={Title} width={170} height={160}></Image>
+        <div>
+            <Link href={'/restaurant'}>
+                <div className='grid_item'>
+                    <Image src={ImageSrc} width={356} height={256} alt={RestaurantName}></Image>
+                    <p className='grid_header'>{RestaurantName}</p>
+                    <p className='grid_subtitle'>{Currency} • {KitchenString}</p>
+                    <p className='grid_time_delivery'>{TimeDelivery}</p>
+                </div>
+            </Link>
         </div>
+
     )
 }

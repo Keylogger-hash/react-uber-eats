@@ -1,8 +1,8 @@
-import '../Form.css'
+import '../../Form.css'
 import React from "react";
-import {LoginFormFooter} from "@/components/LoginModal/LoginFormFooter/LoginFormFooter";
+import {LoginFormFooter} from "@/components/LoginModal/Auth/LoginFormFooter/LoginFormFooter";
 
-export const RegisterForm = ()=>{
+export const EmailRegisterForm = ()=>{
     return (
         <div>
             <div className={'login_form'}>

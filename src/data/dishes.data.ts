@@ -1,6 +1,6 @@
-import {RestaurantItemProps} from "@/components/RestaurantGridItem/RestaurantGridItem";
+import {DishesProps} from '@/interfaces/dishes.interface';
 
-const dishes:RestaurantItemProps[] = [
+export const DishesData:DishesProps[] = [
     {
         Title:'Сельдь на бородинском хлебе',
         SubTitle:'',

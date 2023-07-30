@@ -1,8 +1,8 @@
-import '../Form.css'
+import '../../Form.css'
 import React from "react";
+import Link from "next/link";
 
-
-export const LoginForm = ()=>{
+export const EmailLoginForm = ()=>{
     return (
         <div>
             <div className={'login_form'}>
@@ -36,9 +36,9 @@ export const LoginForm = ()=>{
                 <button className={'login_button'}>Войти</button>
             </div>
             <div className={'form_footer'}>
-                <a>
+                <Link href={"#"}>
                     Регистрация
-                </a>
+                </Link>
             </div>
         </div>
     )

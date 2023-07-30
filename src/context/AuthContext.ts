@@ -1,8 +1,8 @@
 import {createContext} from "react";
 
 export interface AuthContext {
-    user:string,
-    password:string
+    isAuth: boolean,
+    setIsAuth: ()=>{}
 }
 
 export const AuthContext = createContext({});

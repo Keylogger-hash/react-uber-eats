@@ -1,8 +1,8 @@
-import '../Form.css'
-import './AuthForm.css'
+import '../../Form.css'
+import './AuthLoginForm.css'
 import Image from "next/image";
-import {LoginFormFooter} from "@/components/LoginModal/LoginFormFooter/LoginFormFooter";
-export const AuthForm = ()=>{
+import {LoginFormFooter} from "@/components/LoginModal/Auth/LoginFormFooter/LoginFormFooter";
+export const AuthLoginForm = ()=>{
     return (
         <div>
             <div className={'auth_form'}>

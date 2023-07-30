@@ -3,7 +3,9 @@
     display: flex;
     justify-content: flex-end;
     user-select: none;
+    opacity: 0.5;
 }
-.close_button svg:hover{
-    stroke: gray;
+.close_button:hover svg path{
+    stroke:#59BD5A;
+    opacity: 1;
 }

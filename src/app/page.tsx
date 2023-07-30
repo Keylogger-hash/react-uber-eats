@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import {SearchBar} from "@/components/SearchBar/SearchBar";
-import {GridItemList} from "@/components/GridItemList/GridItemList";
+import {RestaurantGridItemList} from "@/components/RestaurantGridItemList/RestaurantGridItemList";
 import {Footer} from "@/components/Footer/Footer";
 import {Header} from "@/components/Header/Header";
 import {createContext} from "react";
@@ -24,7 +24,7 @@ export default function Home() {
                           Рестораны в Москве
                       </div>
                       <SearchContext.Provider value={[searchValue]}>
-                          <GridItemList></GridItemList>
+                          <RestaurantGridItemList></RestaurantGridItemList>
                       </SearchContext.Provider>
                   </div>
               </div>
