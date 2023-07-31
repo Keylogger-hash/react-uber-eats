@@ -3,18 +3,26 @@
 import './ButtonLogin.css'
 import {LoginModal} from "@/components/LoginModal/LoginModal";
 import {useState} from "react";
+import {AuthStatus} from "@/helpers/constants/auth";
+import {AuthContext} from "@/context/AuthContext";
 
 export const ButtonLogin = ()=>{
-    let [showModal,setShowModal] = useState(false);
-    const toggle = ()=>{
-        setShowModal(!showModal)
+    const [isAuth,toggle] = useState<AuthStatus>(AuthStatus.CloseWindow);
+
+    // let [showModal,setShowModal] = useState(false);
+    const handleClick = ()=>{
+        toggle(AuthStatus.AuthRegisterStatus)
     }
 
-    let ElementButtonLogin = <div onClick={toggle} className='button_login'>Войти</div>
+    let ElementButtonLogin = <div onClick={handleClick} className='button_login'>Войти</div>
 
     return (
         <div>
-            {showModal?<LoginModal ShowModal={showModal} toggle={toggle}></LoginModal>:ElementButtonLogin}
+            <AuthContext.Provider value={{isAuth,toggle}}>
+            {isAuth===AuthStatus.CloseWindow?
+                ElementButtonLogin:
+                <LoginModal></LoginModal>}
+            </AuthContext.Provider>
         </div>
     )
     // if (showModal){

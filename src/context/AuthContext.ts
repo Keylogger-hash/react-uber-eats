@@ -1,8 +1,5 @@
 import {createContext} from "react";
+import {IAuthProps} from "@/interfaces/auth.interface";
 
-export interface AuthContext {
-    isAuth: boolean,
-    setIsAuth: ()=>{}
-}
 
-export const AuthContext = createContext({});
+export const AuthContext = createContext<IAuthProps>({});

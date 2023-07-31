@@ -1,0 +1,16 @@
+.form_footer{
+    display: flex;
+    flex-direction: row;
+    color:#595959;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap:10px;
+    margin-top: 24px;
+}
+.form_footer a{
+    color:#3766a9;
+    cursor: pointer;
+}
+.form_footer a:hover{
+    color:  red;
+}

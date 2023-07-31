@@ -1,3 +1,3 @@
 import {createContext} from "react";
-
-export const SearchContext = createContext([]);
+import {SearchProps} from "@/interfaces/search.interface";
+export const SearchContext = createContext<SearchProps>({});

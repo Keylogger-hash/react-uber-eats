@@ -2,5 +2,6 @@ export  enum AuthStatus {
     EmailLoginStatus = 'EmailLogin',
     AuthLoginStatus = 'AuthLogin',
     AuthRegisterStatus = 'AuthRegister',
-    EmailRegisterStatus = 'EmailRegister'
+    EmailRegisterStatus = 'EmailRegister',
+    CloseWindow = 'CloseWindow'
 }

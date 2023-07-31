@@ -1,4 +1,4 @@
 export interface LoginModalProps {
-    ShowModal:boolean,
-    toggle:()=>{}
+    ShowModal?:boolean,
+    toggle?:()=>{}
 }
