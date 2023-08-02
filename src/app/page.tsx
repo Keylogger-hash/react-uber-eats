@@ -17,13 +17,13 @@ export default function Home() {
             <main className={styles.main}>
               <div className={styles.container}>
                   <div className={styles.main_wrapper}>
-                      <SearchContext.Provider value={[searchValue,setSearchValue]}>
+                      <SearchContext.Provider value={{searchValue, setSearchValue}}>
                           <SearchBar></SearchBar>
                       </SearchContext.Provider>
                       <div className={styles.main_header}>
                           Рестораны в Москве
                       </div>
-                      <SearchContext.Provider value={[searchValue]}>
+                      <SearchContext.Provider value={{searchValue}}>
                           <RestaurantGridItemList></RestaurantGridItemList>
                       </SearchContext.Provider>
                   </div>

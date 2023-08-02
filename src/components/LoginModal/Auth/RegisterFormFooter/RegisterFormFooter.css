@@ -7,10 +7,10 @@
     column-gap:10px;
     margin-top: 24px;
 }
-.form_footer a{
+.form_footer div{
     color:#3766a9;
     cursor: pointer;
 }
-.form_footer a:hover{
+.form_footer div:hover{
     color:  red;
 }

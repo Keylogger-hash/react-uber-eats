@@ -15,9 +15,9 @@ export const LoginFormFooter = ()=>{
     return (
         <div className={'form_footer'}>
             Уже есть аккаут?
-            <a onClick={changeToLogin}>
+            <div onClick={changeToLogin}>
                 Войти
-            </a>
+            </div>
         </div>
     )
 }

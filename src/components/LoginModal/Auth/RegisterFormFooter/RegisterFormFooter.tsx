@@ -12,10 +12,9 @@ export const RegisterFormFooter = ()=>{
     }
     return (
         <div className={'form_footer'}>
-            Уже есть аккаут?
-            <a onClick={changeToRegister}>
+            <div onClick={changeToRegister}>
                 Регистрация
-            </a>
+            </div>
         </div>
     )
 }

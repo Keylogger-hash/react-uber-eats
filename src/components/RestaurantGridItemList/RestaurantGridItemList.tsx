@@ -8,10 +8,10 @@ import {SearchContext} from '@/context/SearchContext';
 
 export const   RestaurantGridItemList = () =>{
 
-    const search = useContext(SearchContext);
+    const {searchValue,setSearchValue} = useContext(SearchContext);
     const RestaurantListFilter = RestaurantsData.filter(
         restaurant=>
-            restaurant.RestaurantName.toLowerCase().includes(search.toString().toLowerCase())
+            restaurant.RestaurantName.toLowerCase().includes(searchValue.toString().toLowerCase())
     )
     const GridItemListData: ReactNode[] = RestaurantListFilter.map((restaurant, index)=>{
         return (
