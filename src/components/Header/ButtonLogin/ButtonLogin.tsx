@@ -21,7 +21,11 @@ export const ButtonLogin = ()=>{
             <AuthContext.Provider value={{isAuth,toggle}}>
             {isAuth===AuthStatus.CloseWindow?
                 ElementButtonLogin:
-                <LoginModal></LoginModal>}
+                <div>
+                    {ElementButtonLogin}
+                    <LoginModal></LoginModal>
+                </div>
+            }
             </AuthContext.Provider>
         </div>
     )
