@@ -11,17 +11,21 @@ export const AuthOptions = ()=>{
     const {isAuth,toggle} = useContext<IAuthProps>(AuthContext);
     console.log(isAuth)
     function changeToEmailRegister(){
-        toggle(AuthStatus.EmailRegisterStatus)
+        if(toggle){
+            toggle(AuthStatus.EmailRegisterStatus)
+        }
     }
     function changeToEmailLogin(){
-        toggle(AuthStatus.EmailLoginStatus)
+        if(toggle){
+            toggle(AuthStatus.EmailLoginStatus)
+        }
     }
     return (
         <div>
             <div className={'auth_form'}>
                 {isAuth && isAuth === AuthStatus.AuthLoginStatus?
-                    <h1>Войти</h1>:
-                    <h1>Регистрация</h1>
+                    <h1 className={'auth_header'}>Вход в аккаунт</h1>:
+                    <h1 className={'auth_header'}>Регистрация</h1>
                 }
                 <button className={'auth_button'}>
                     <div className={"image_wrapper"}>

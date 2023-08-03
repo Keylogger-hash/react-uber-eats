@@ -1,8 +1,8 @@
 import './DishGridItem.css'
 import Image from "next/image";
-import {RestaurantItemProps} from '@/interfaces/dishes.interface';
+import {DishesProps} from '@/interfaces/dishes.interface';
 
-export const DishGridItem = ({Title,SubTitle,Price,Currency,ImageSource}:RestaurantItemProps)=>{
+export const DishGridItem = ({Title,SubTitle,Price,Currency,ImageSource}:DishesProps)=>{
     return (
         <div className='restaurant_grid_item'>
             <div className='restaurant_grid_item_block'>

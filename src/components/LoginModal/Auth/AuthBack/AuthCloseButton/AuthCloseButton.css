@@ -4,9 +4,7 @@
     justify-content: flex-end;
     cursor: pointer;
     user-select: none;
-    opacity: 0.5;
 }
 .close_button:hover svg path{
-    stroke:#59BD5A;
-    opacity: 1;
+    stroke: #000000;
 }

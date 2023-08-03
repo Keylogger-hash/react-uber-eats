@@ -17,7 +17,8 @@
     flex-direction: column;
 }
 .main_header{
-    margin-top:56px;
+    margin-top:57px;
     font-size: 22px;
+    margin-bottom:16px;
     color: #1D1D1D;
 }

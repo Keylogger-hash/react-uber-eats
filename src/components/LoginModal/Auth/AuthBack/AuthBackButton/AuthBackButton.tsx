@@ -7,10 +7,14 @@ import {AuthStatus} from "@/helpers/constants/auth";
 export const AuthBackButton = ()=>{
     const {isAuth,toggle} = useContext(AuthContext);
     function returnToAuthLogin(){
-        toggle(AuthStatus.AuthLoginStatus)
+        if(toggle){
+            toggle(AuthStatus.AuthLoginStatus)
+        }
     }
     function returnToAuthRegister(){
-        toggle(AuthStatus.AuthRegisterStatus)
+        if(toggle){
+            toggle(AuthStatus.AuthRegisterStatus)
+        }
     }
     const returnAuth = isAuth===AuthStatus.EmailLoginStatus?returnToAuthLogin:returnToAuthRegister
     return (

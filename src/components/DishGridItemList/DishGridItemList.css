@@ -5,11 +5,7 @@
     display: flex;
     flex-direction: column;
 }
-.restaurant_grid_item_header{
-    color: #1D1D1D;
-    font-size: 22px;
-    margin-bottom: 32px;
-}
+
 .restaurant_grid{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(470px,1fr));

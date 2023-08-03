@@ -1,0 +1,16 @@
+.restaurant_grid_item_header{
+    color: #1D1D1D;
+    font-size: 22px;
+    margin-bottom: 32px;
+}
+@media screen and (max-width: 768px) {
+    .restaurant_grid_item_header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap:12px;
+        color: #1D1D1D;
+        font-size: 22px;
+        margin-bottom: 32px;
+    }
+}

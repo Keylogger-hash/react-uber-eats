@@ -34,3 +34,9 @@
 .image_wrapper{
     margin-left:16px;
 }
+.auth_header{
+    display: inline !important;
+    text-align: start !important;
+    white-space: nowrap !important;
+    color: #000000 !important;
+}

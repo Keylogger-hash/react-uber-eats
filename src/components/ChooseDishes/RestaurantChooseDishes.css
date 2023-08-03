@@ -12,6 +12,12 @@
     padding-top:32px;
     padding-bottom: 29px;
 }
+.restaurant_choose_header{
+    margin-top:56px;
+    margin-bottom: 32px;
+    color: #1D1D1D;
+    font-size: 22px;
+}
 .active{
     color:#327430 !important;
 }

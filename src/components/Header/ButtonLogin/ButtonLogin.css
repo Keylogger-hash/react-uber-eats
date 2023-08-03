@@ -8,6 +8,7 @@
     height: 40px;
     user-select: none;
     border: 1px solid #E0E0E0;
+    cursor: pointer;
 }
 .button_login:hover{
     background-color: aliceblue;

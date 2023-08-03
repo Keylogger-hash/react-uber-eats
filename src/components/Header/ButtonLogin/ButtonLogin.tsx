@@ -11,7 +11,9 @@ export const ButtonLogin = ()=>{
 
     // let [showModal,setShowModal] = useState(false);
     const handleClick = ()=>{
-        toggle(AuthStatus.AuthRegisterStatus)
+        if(toggle){
+            toggle(AuthStatus.AuthRegisterStatus)
+        }
     }
 
     let ElementButtonLogin = <div onClick={handleClick} className='button_login'>Войти</div>
@@ -29,13 +31,5 @@ export const ButtonLogin = ()=>{
             </AuthContext.Provider>
         </div>
     )
-    // if (showModal){
-    //     return (
-    //         <LoginModal ShowModal={showModal}></LoginModal>
-    //     )
-    // } else{
-    //     return (
-    //
-    //     )
-    // }
+
 }
