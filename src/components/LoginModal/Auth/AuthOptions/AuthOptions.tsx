@@ -5,6 +5,7 @@ import {AuthContext} from "@/context/AuthContext";
 import {IAuthProps} from "@/interfaces/auth.interface";
 import {useContext} from "react";
 import './AuthOptions.css'
+import {signIn} from "next-auth/react";
 import {AuthStatus} from "@/helpers/constants/auth";
 
 export const AuthOptions = ()=>{
@@ -46,7 +47,8 @@ export const AuthOptions = ()=>{
                     }
 
                 </button>
-                <button className={'auth_button'}>
+
+                <button className={'auth_button'} onClick={()=>signIn('google')}>
                     <div className={"image_wrapper"}>
                         <Image
                             width={24}

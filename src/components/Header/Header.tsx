@@ -3,7 +3,7 @@ import './Header.css'
 import {ButtonLogin} from "@/components/Header/ButtonLogin/ButtonLogin";
 import {HeaderCartLogo} from "@/components/Header/HeaderCartLogo/HeaderCartLogo";
 import {HeaderLogo} from "@/components/Header/HeaderLogo/HeaderLogo";
-export const Header = ()=>{
+export const Header = async ()=>{
     return (
         <header className='header'>
             <div className={styles.container}>
