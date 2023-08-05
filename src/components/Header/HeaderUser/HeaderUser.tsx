@@ -1,6 +1,6 @@
 'use client'
 import {signOut,useSession} from "next-auth/react";
-
+import './HeaderUser.css'
 export default function HeaderUser(){
     const session = useSession();
     return (
@@ -9,7 +9,7 @@ export default function HeaderUser(){
                 {session.data?.user?.name}
             </div>
             <div>
-                <button onClick={()=>signOut()}>Sign out</button>
+                <button className={'header_user_button'} onClick={()=>signOut()}>Sign out</button>
             </div>
         </div>
     )

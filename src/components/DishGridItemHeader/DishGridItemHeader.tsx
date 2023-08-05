@@ -9,7 +9,7 @@ export const DishGridItemHeader = ()=>{
                 {
                     isMobile?
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="1" viewBox="0 0 50 1" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H50V1H0V0Z" fill="#757575"/>
+                            <path fillRule="evenodd" clipRule="evenodd" d="M0 0H50V1H0V0Z" fill="#757575"/>
                         </svg>
                         : <p></p>
                 }

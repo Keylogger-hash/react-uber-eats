@@ -45,9 +45,7 @@ export const AuthOptions = ()=>{
                             Почта
                         </div>
                     }
-
                 </button>
-
                 <button className={'auth_button'} onClick={()=>signIn('google')}>
                     <div className={"image_wrapper"}>
                         <Image
