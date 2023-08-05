@@ -1,11 +1,9 @@
 "use client"
-import Image from 'next/image'
 import styles from './page.module.css'
 import {SearchBar} from "@/components/SearchBar/SearchBar";
 import {RestaurantGridItemList} from "@/components/RestaurantGridItemList/RestaurantGridItemList";
 import {Footer} from "@/components/Footer/Footer";
 import {Header} from "@/components/Header/Header";
-import {createContext} from "react";
 import {useState} from "react";
 import {SearchContext, SearchProps} from '@/context/SearchContext';
 

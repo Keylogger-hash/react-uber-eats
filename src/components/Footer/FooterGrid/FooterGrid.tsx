@@ -8,7 +8,7 @@ export const FooterGrid = ()=>{
             <div className='footer_grid_item'>
                 <Dropdown></Dropdown>
                 <p>#UberEats</p>
-                <div>
+                <div className={'footer_grid_logo_item'}>
                     <Image src='/FooterLogos/facebook.svg' alt='facebook' width={24} height={24}></Image>
                     <Image src='/FooterLogos/twitter.svg' alt='twitter' width={24} height={24}></Image>
                     <Image src='/FooterLogos/instagram.svg' alt='instagram' width={24} height={24}></Image>

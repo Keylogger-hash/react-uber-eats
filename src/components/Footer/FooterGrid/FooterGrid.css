@@ -12,6 +12,10 @@
     row-gap:23px;
     flex: 0 0 33.333%;
 }
+.footer_grid_logo_item{
+    display: flex;
+    column-gap: 12px;
+}
 @media screen and (max-width:787px) {
     .footer_grid{
         display: flex;
